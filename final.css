@@ -11,70 +11,21 @@ body{
           align-items: center;
           min-height: 150vh;
 }
-@media (max-width:700px){
-          body{
-                    box-sizing: border-box;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 0px;
-          }
-}
-@media  (max-width:412px) {
-          body{
-                    box-sizing: border-box;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 0px;
-          }
-}
 .container{
           position: relative;
           width: 100%;
           min-width: 1000px;
           min-height: 1000px;
-          margin: 50px;
+          margin: 100px;
           background: #fff;
           display: grid;
           grid-template-columns: 1fr 2fr;
           box-shadow: 0 35px 55px rgba(0, 0, 0, .1);
 }
-@media (max-width:700px){
-          .container{
-                    margin: 0;
-                    padding: 0;
-                    grid-template-columns: repeat(1,1fr);
-                    padding: 200px;
-                    margin-right: 0px;
-                    
-                    
-                    
-          }
-}
-@media (max-width:412px){
-          .container{
-                    margin: 0;
-                    padding: 0;
-                    grid-template-columns: repeat(1,1fr);
-                    padding: 300px;
-                    margin-right: 0px;
-                    
-                    
-                    
-          }
-}
 .container .left_side{
           position: relative;
           background: #003147;
           padding: 40px;
-}
-@media (max-width:1000px){
-          .container .left_side{
-                    padding: 100px;
-                    width: 100%;
-                    margin: 0px;
-                    object-fit: contain; 
-
-          }  
 }
 .profiletext{
           position: relative;
@@ -91,16 +42,6 @@ body{
           height: 200px;
           
 }
-@media (max-width:1000px){
-          .profiletext .imgbx{
-                    border-radius: 100%;
-                    overflow: hidden;
-                    width: 200px;
-                    height: 200px;
-                    
-          }
-
-}
 .profiletext h2{
           color: #fff;
           font-size: 2em;
@@ -108,17 +49,39 @@ body{
           text-transform: uppercase;
           text-align: center;
           font-weight: 600;
-          line-height: 1.6em;
+          line-height: 1.5em;
+          cursor: pointer;
+          animation: beat .35s infinite alternate;
+}
+.profiletext h2:hover{
+          color : #03a9f4 ;
+}
+@keyframes beat{
+	to { transform: scale(1.07); }
+}
+.profiletext audio{
+          position: relative;
+          font-size: 2em;
+          margin-top: 20px;
+          text-align: center;
+          font-weight: 600;
+          cursor: pointer;
+}
+.profiletext audio:hover{
+          color: #03a9f4;
+}
+.profiletext span1{
+          color: #fff;
+          font-size: 2em;
+          margin-top: 20px;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: .99em;
+          font-weight: 600; 
 }
 .profiletext h2 span{
-          font-size: .8em;
+          font-size: .7em;
           font-weight: 300;
-}
-@media (max-width:412px){
-          .profiletext h2 span{
-                    font-size: .6em;
-                    font-weight: 400;    
-          }
 }
 .contactInfo{
           padding-top: 40px;
@@ -148,6 +111,9 @@ body{
           color: #fff;
           font-weight: 300;
           cursor: pointer;
+}
+.contactInfo ul li span:hover{
+          color: #03a9f4;
 }
 .skills{
           padding-top: 40px;
@@ -195,11 +161,6 @@ body{
            height: 100%;
            background: #03a9f4;
 }
-
-
-
-
-
 /* right_side */
 .container .right_side{
           position: relative;
@@ -245,6 +206,7 @@ p{
 }
 .project{
           margin-top: 40px;
+          cursor: pointer;
 }
 .project li h5{
           margin-down: 20px;
@@ -274,12 +236,6 @@ p{
           display: grid;
           grid-template-columns: repeat(4,1fr);
 }
-@media (max-width:412px){
-          .interest ul{
-                    display: grid;
-                    grid-template-columns: repeat(2,1fr);     
-          }
-}
 .interest ul li{
           list-style: none;
           color: #333;
@@ -292,3 +248,9 @@ p{
          width: 20px;
 }
 
+@media screen and (max-width:600px) {
+          .container{
+                    margin: 10px;
+                    grid-template-columns: repeat(1,1fr);
+          }
+}
