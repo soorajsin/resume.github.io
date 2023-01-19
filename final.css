@@ -255,7 +255,7 @@ body{
           .skills{
                     padding-top: 40px;
                     margin-left: 300px;
-                    margin-right: 200px;
+                    margin-right: 250px;
                     margin-top: 50px;
           }
 }
@@ -332,9 +332,15 @@ body{
           margin-top: 5px;
 }
 @media only screen and (max-width: 600px){
+         .contactInfo.language{
+                    margin-right: 100px;
+         }
+}
+@media only screen and (max-width: 600px){
           .contactInfo.language h3{
                     margin-left: 300px;
                     margin-top: 50px;
+                    margin-right: 250px;
           }
 }
 @media only screen and (max-width: 600px){
@@ -345,13 +351,13 @@ body{
                     background: #081921;
                     display: block;
                     margin-left: 300px;
-                    margin-right: 100px;
+                    margin-right: 250px;
           }
 }
 @media only screen and (max-width: 600px){
           .contactInfo.language .text{
                     margin-left: 300px;
-                    margin-right: 100px;
+                    margin-right: 250px;
           }
 }
 .contactInfo.language .percent div{
@@ -390,7 +396,7 @@ body{
           .summery{
                     margin-bottom: 50px;
                     margin-left: 300px;
-                    margin-right: 200px;
+                    margin-right: 250px;
           } 
 }
 .summery:last-child{
@@ -441,7 +447,7 @@ p{
 @media only screen and (max-width: 600px){
           .education {
                    margin-left: 300px;
-                   margin-right: 200px;
+                   margin-right: 250px;
           }
 }
 @media only screen and (max-width: 600px){
@@ -472,7 +478,7 @@ p{
                     margin-top: 40px;
                     cursor: pointer;
                     margin-left: 300px;
-                    margin-right: 200px;
+                    margin-right: 250px;
           } 
 }
 .project li h5{
@@ -494,7 +500,7 @@ p{
                     color: #848c90;
                     font-weight: 600;
                     margin-left: 300px;
-                    margin-right: 200px;
+                    margin-right: 250px;
           } 
 }
 .experience li h5{
@@ -514,7 +520,7 @@ p{
                     margin-top: 40px;
                     padding: 20px;
                     margin-left: 300px;
-                    margin-right: 200px;
+                    margin-right: 250px;
           } 
 }
 .interest ul{
